@@ -4,9 +4,9 @@ This project is a collection of Scripts that leverage ISE APIs (ISE 2.4 and abov
 
 ## Getting Started
 
-%%%%%%
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
-%%%%%%
+This folder contains sub-folders named according to specific ISE configurations. Inside each folder there is a script that allow operations like List, Create, Delete and Update. Some folders will have a template csv file that will be used as the source of informartion.
+
+Use -h option on each script to be presented with help.
 
 ### Prerequisites
 
@@ -37,7 +37,7 @@ Clone git repository
 
 ## Deployment
 
-Edit the config file for ISE IP/Hostname and Credentials.
+Edit the config file inside config folder with proper ISE IP/Hostname and Credentials.
 
 ```
 ise_host = "10.10.10.10"
@@ -59,7 +59,7 @@ Give an example
 
 ## Contributing
 
-Diego Soares
+none
 
 ## Authors
 
@@ -69,9 +69,9 @@ See also the list of [contributors] who participated in this project.
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details
 
 ## Acknowledgments
 
-* BIG THANK YOU for all my CISCO customers that challenged me with use cases.
+* BIG THANK YOU to all my CISCO customers that challenged me with use cases.
 
