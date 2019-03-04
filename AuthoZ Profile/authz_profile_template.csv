@@ -1,0 +1,2 @@
+﻿AuthZ Profile Name (Required),AuthZ Profile Description,Access Type (Required),Vlan id,Voice Vlan,dACL Name,Reauth timer,Interface Template
+,,,,yes,,,
