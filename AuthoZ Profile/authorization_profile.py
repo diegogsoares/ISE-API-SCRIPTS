@@ -1,9 +1,7 @@
 import requests
 import json
 import sys
-import math
 from optparse import OptionParser
-from optparse import OptionGroup
 
 sys.path.append('../')
 from config import config
