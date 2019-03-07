@@ -1,2 +1,3 @@
 ﻿AuthZ Profile Name (Required),AuthZ Profile Description,Access Type (Required),Vlan id,Voice Vlan,dACL Name,Reauth timer,Interface Template
-,,,,yes,,,
+API_TEST,TEST Authorization Profile created by API call,ACCESS_ACCEPT,10,yes,PERMIT_ALL,,QoS_TEMPLATE
+API_TEST_DENY,TEST Authorization Profile created by API call,ACCESS_REJECT,,,,,
