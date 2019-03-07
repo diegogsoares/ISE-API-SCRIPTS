@@ -4,9 +4,14 @@ This project is a collection of Scripts that leverage ISE APIs (ISE 2.4 and abov
 
 ## Getting Started
 
-This folder contains sub-folders named according to specific ISE configurations. Inside each folder there is a script that allow operations like List, Create, Delete and Update. Some folders will have a template csv file that will be used as the source of informartion.
+This folder contains sub-folders named according to specific ISE configuration components. Inside each folder there is a script that allow operations like List, Create, Delete and Update. Some folders will have a template csv file that will be used as the input of information.
 
-Use -h option on each script to be presented with help.
+AuthoZ Profile Folder - Contains the script and template to List, Create and Delete Authorization Profiles.
+
+config - Where configuration file is.
+
+Network Devices Folder - Contains the script and template to List, Create and Delete Network Devices.
+
 
 ### Prerequisites
 
@@ -33,6 +38,7 @@ Clone git repository
 ```bash
    git clone https://github.com/diegogsoares/ISE-API-SCRIPTS.git
    cd ISE-API-SCRIPTS
+   python3 -m pip install -r requirements.txt 
 ```
 
 ## Deployment
@@ -45,14 +51,49 @@ ise_username = "iseUsername"
 ise_password = "isePassword"
 ```
 
-## Running the tests
+## Running ISE-API-SCRIPTS
 
-Explain how to run the automated tests for this system
+#### Authorization Profiles 
 
+Use -h option on each script to be presented with help.
 ```
-Give an example
+cd AuthoZ Profile
+python3 authorization_profile.py -h
+```
+Use -l option to List all Authorization Profiles.
+```
+cd AuthoZ Profile
+python3 authorization_profile.py -l
 ```
 
+Use -c option to create Authorization Profiles based on the template file or -d to delete.
+
+Note: When create or delete is selected the -f option is a requirement to indicate the file to be used as input for the script.
+```
+cd AuthoZ Profile
+python3 authorization_profile.py -c -f authz_profile_template.csv 
+```
+
+#### Network Devices
+
+Use -h option on each script to be presented with help.
+```
+cd Network Devices
+python3 network_device.py -h
+```
+Use -l option to List all Network Devices.
+```
+cd Network Devices
+python3 network_device.py -l
+```
+
+Use -c option to create Network Devices based on the template file or -d to delete.
+
+Note: When create or delete is selected the -f option is a requirement to indicate the file to be used as input for the script.
+```
+cd Network Devices
+python3 network_device.py -c -f network_devices_template.csv 
+```
 ## Built With
 
 * [PyCharm CE](https://www.jetbrains.com/pycharm/) - Python IDE
